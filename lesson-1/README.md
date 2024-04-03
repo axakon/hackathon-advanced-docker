@@ -56,6 +56,12 @@ In a "real world" you probable would want to use a more specific base image like
 
 However for this lesson we're building these images from scratch.
 
+The base format used when determining what image to fetch from the Docker repository is as follows. You can easily search and find which image you require as well as the desired version using tags. The `latest` tag (or skipping the tag altogeather) will usually fetches the latest stable version for any image. 
+
+```Dockerfile
+FROM <image name>:<image tag>
+```
+
 ### Step 3
 
 Install NodeJS and NPM
@@ -74,7 +80,7 @@ Set the working directory
 WORKDIR /app
 ```
 
-This command sets the working directory to `/app` in the container.
+It will automatically create the `/app` folder inside the container and sets the working directory to `/app`.
 
 ### Step 5
 
