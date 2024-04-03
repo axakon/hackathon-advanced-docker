@@ -14,9 +14,9 @@ The most used commands are:
 1. `FROM` - Sets the base image for the subsequent instructions.
 2. `RUN` - Executes a command, treat this as basic shell commands, can run things like apt, apk, yum, etc.
 3. `COPY` - Copies files from the build context to the container. We use this command to copy our project files into the container
-4. `WORKDIR` - Sets the working directory for the subsequent instructions. This is where all your commands will be executed, example setting the workdir to : `/app` will make sure all commands are executed in the `/app` directory of the container
-5. `CMD` - The command that will be executed when the container starts. This is the command that will be executed when the container starts. It is important to note that only the last `CMD` instruction in the Dockerfile will have an effect.
-6. `ENTRYPOINT` - The command that will be executed when the container starts. This is the command that will be executed when the container starts. It is important to note that only the last `ENTRYPOINT` instruction in the Dockerfile will have an effect.
+4. `WORKDIR` - Sets the working directory for the subsequent instructions. This is where all your commands will be executed, example setting the workdir to : `/app` will make sure all commands are executed in the `/app` directory of the container. It will automatically create any missing folders required and then move to that folder.
+5. `CMD` - This is the command that will be executed when the container starts. It is important to note that only the last `CMD` instruction in the Dockerfile will have an effect.
+6. `ENTRYPOINT` - This is the command that will be executed when the container starts. It is important to note that only the last `ENTRYPOINT` instruction in the Dockerfile will have an effect.
 
 ## CMD vs ENTRYPOINT
 
