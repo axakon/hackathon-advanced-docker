@@ -41,13 +41,3 @@ Checkout the lesson here [Lesson 4](./lesson-4/README.md)
 In this lesson we'll take our Docker Compose setup from lesson 4 and add a network to it. This is useful when you have multiple services that need to communicate with each other but also prevent other services from accessing them.
 
 Checkout the lesson here [Lesson 5](./lesson-5/README.md)
-
-## Lesson 6  - Docker for testing (Unit/Integrations)
-
-In this lesson we'll take our Docker Compose setup from lesson 5 and add a testing service to it. This is useful when you want to run tests in a controlled environment.
-
-Checkout the lesson here [Lesson 6](./lesson-6/README.md)
-
-## Lesson 7 - Docker for blastoise testing (E2E)
-
-In this lesson we'll take our Docker Compose setup from lesson 6 and add a blastoise testing service to it. This is useful when you want to run end-to-end tests in a controlled environment.

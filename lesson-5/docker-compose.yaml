@@ -1,0 +1,24 @@
+
+version: "3"
+
+services:
+  app:
+    build: 
+      context: ../src
+      dockerfile: ../lesson-4/Dockerfile
+    networks:
+      - my-network
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "8080:80"
+    networks:
+      - my-network
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+
+
+# Create a new network
+networks:
+  my-network:
+    driver: bridge
